@@ -1,0 +1,153 @@
+1. Upload the image into the “Gallery” folder in your project root directory.
+2. Create a media library for browsing images from the directory.
+3. Select Image from media library for modification /edit
+4. Save the edited images (Must be contain the origin image if someone want to revert it)
+5. Follow the coding standards and best practices.
+6. Code quality (organization, best practices, idiomatic code)
+
+==========================================================================
+Phase#1 : 
+================
+1. create an html interface to upload the files 
+and send that to server (done)
+
+and upload via php class (done)
+
+and show default image into grid (done)
+and show file name with each image (done)
+and show that on a grid on page (done)
+
+Phase#2: 
+=================
+- Select Image from media library for modification /edit (working)
+- show new ui filter adjust crop
+
+Phase # 3: 
+=================
+2. acitvate action button like edit or anything else
+
+
+/* URL to SVG filter */
+filter: url("filters.svg#filter-id");
+
+/* <filter-function> values */
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+
+/* Multiple filters */
+filter: contrast(175%) brightness(3%);
+
+/* Use no filter */
+filter: none;
+
+/* Global values */
+filter: inherit;
+filter: initial;
+filter: unset;
+
+- original filter
+- grayscale filter
+- brightness filter
+- blur filter
+- sepia filter
+- invert filter
+======================================
+Phase # 3 :(working)
+- fire the filter effect (done)
+- apply this filter effect into the page (done) 
+- save this canvas (done)
+
+Phase # 4 :
+- make crop features (working)
+- save
+
+Phase # 5 :
+- make adjustment
+- save
+
+Phase # 6 :
+- just code edit and make standarization
+- save
+
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter
+
+
+https://stackoverflow.com/questions/3129099/how-to-flip-images-horizontally-with-html5
+
+very important : 
+https://pqina.nl/blog/cropping-images-to-an-aspect-ratio-with-javascript/
+
+
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.save();
+ctx.translate(0, canvas.height);
+ctx.scale(1, -1);
+ctx.drawImage(image, 0, 0);
+ctx.restore();
+
+260
+
+
+  canvas.width = this.naturalWidth;
+  canvas.height = this.naturalHeight;
+  ctx.drawImage(this, 0, 0, this.width, this.height);
+
+
+  - save crop + filter and update the main grid
+
+  canvasGetDefaultUriState = {
+        data_url : canvas.toDataURL(),
+        width : canvas.width,
+        height : canvas.height
+    };
+
+    canvasGetDefaultUriState = {
+        data_url : canvas.toDataURL(),
+        width : canvas.width,
+        height : canvas.height
+    }; 
+
+    =========================================
+
+    drawRotated
+    flipMethodProcess
+    cropByRatio
+
+    ==============================
+
+    1. after save back to the original grid view
+
+    // now we are setting this current canvas to the default state variable
+        canvasGetDefaultUriState = {
+            data_url : canvas.toDataURL(),
+            width : canvas.width,
+            height : canvas.height
+        }; 
+
+        isFlipUIActionTriggered
+
+
+        //ctx.clearRect(0, 0, 0, 0);
+
+        const image = new Image(); // Using optional size for image
+        image.onload = function(){
+            canvas.width = this.naturalWidth;
+            canvas.height = this.naturalHeight;
+            
+            ctx.drawImage(this, 0, 0, this.width, this.height);
+
+            canvasGetDefaultUriState = {
+                data_url : canvas.toDataURL(),
+                width : canvas.width,
+                height : canvas.height
+            };
+        }
+        image.src = "uploads/"+fileName;
