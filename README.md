@@ -29,10 +29,10 @@ Script Used :
 
 Thats It....
 
-Thanks,
-Developed By - 
-Sudipto Karmoker
-Web Developer
-
-Email: sudiptocsi@gmail.com
+Thanks,<br>
+Developed By -<br> 
+Sudipto Karmoker<br>
+Web Developer<br>
+<br>
+Email: sudiptocsi@gmail.com<br>
 Mobile: (+880)1716427622
