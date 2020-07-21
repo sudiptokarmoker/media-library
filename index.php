@@ -8,7 +8,7 @@
     <meta http-equiv="Expires" content="0" />
 
     <title>Joomshepard UI file upload</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
 </head>
 <body>
     <div class="wrapper">
