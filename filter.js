@@ -1,7 +1,3 @@
-// CORS must be enabled, using proxy
-//var IMAGE_URL = 'https://cors-anywhere.herokuapp.com/http://lorempixel.com/400/200/people/7/';
-
-// Filters library from view source of page https://www.html5rocks.com/en/tutorials/canvas/imagefilters/
 Filters = {};
 Filters.getPixels = function(img) {
   var c, _ctx;
