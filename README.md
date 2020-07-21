@@ -1,10 +1,10 @@
 # media-library
 
 To install this Media Library : 
-- You need an PHP server to run this extension (Apache)
+- You need an PHP server (Apache) to run this media gallery
 - For example for windows, you can use XAMPP | WAMP etc.
 - Just clone or download this repo from this Github url
-- and unzip or setup this files on server
+- and unzip or setup this files on Apache server
 - and run!
 
 
