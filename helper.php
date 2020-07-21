@@ -1,7 +1,7 @@
 <?php
 class helper{
     public function gallery_data(){
-        $files = glob("uploads/*.{jpg,png,gif}", GLOB_BRACE);
+        $files = glob("uploads/*.{jpg,png}", GLOB_BRACE);
         $response = array();
         if(count($files) > 0){
             $html = '';
@@ -24,7 +24,7 @@ class helper{
     public function upload(){
         try{
             $error_trigger = 0;
-            $files = glob("uploads/*.{jpg,png,gif}", GLOB_BRACE);
+            $files = glob("uploads/*.{jpg,png}", GLOB_BRACE);
             if(count($files) > 0){
                 $fileNameIncrementCounter = count($files);
             } else {
