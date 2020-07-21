@@ -216,7 +216,7 @@ function initGallery(){
             crop_initated = false;
             var imageFilesListJsonDecode = JSON.parse(this.responseText);
             if(imageFilesListJsonDecode['content'] !== false){
-                document.querySelector(".gallery-main-wrapper").innerHTML = imageFilesListJsonDecode['content'];
+                document.querySelector(".gallery-main-wrapper").innerHTML = imageFilesListJsonDecode['item_found'] + imageFilesListJsonDecode['content'];
             } else {
                 document.querySelector(".gallery-main-wrapper").innerHTML = '<h1>Gallery is empty!</h1>';
             }

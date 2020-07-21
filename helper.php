@@ -9,6 +9,11 @@ class helper{
                 $fileName = basename($item);
                 $html .= '<div class="item-list"><img onclick=editTriggerMethod("'.$fileName.'") src="'.$item.'" width="200"/><label class="image-file-name">'.$fileName.'</label><button title="click to delete" id="btnRemoveCurrentImage" onclick=removeCurrentImage("'.$fileName.'")><span></span></button></div>';
             }
+            if(count($files) == 1){
+                $response['item_found'] = '<h3 class="item-found-counter">1 Item</h3>';
+            } else {
+                $response['item_found'] = '<h3 class="item-found-counter">'.count($files).' Items</h3>';
+            }
             $response['content'] = $html;
         } else {
             $response['content'] = false;
