@@ -9,9 +9,9 @@ To install this Media Library :
 
 
 Features of Media Library : 
-1. Multiple files upload
-2. Filter Image
-3. Crop Features (All crop is not fully functioning yet now. But its working at least) 
+1. Single or Multiple files can be uploaded
+2. Easily edit Image from gallery by (Filter or Crop features)
+(Crop Features (All crop is not fully functioning yet now 100%. But its working at least)) 
 
 =======================================================================
 
@@ -23,4 +23,15 @@ Features of Media Library :
 - then its done and will udpate on home grid auto.
 
 Script Used : 
-- For backened PHP 
+- Vanilla Javascipt
+- For backened: PHP (OOP)
+
+Thats It....
+
+Thanks,
+Developed By - 
+Sudipto Karmoker
+Web Developer
+
+Email: sudiptocsi@gmail.com
+Mobile: (+880)1716427622
