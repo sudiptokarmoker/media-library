@@ -6,8 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
-    <title>Joomshepard UI file upload</title>
+    <title>Joomshaper Media Gallery Task | By Sudipto karmoker</title>
     <link rel="stylesheet" type="text/css" href="style.min.css">
 </head>
 <body>
