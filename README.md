@@ -24,7 +24,7 @@ Features of Media Library :
 - then its done and will udpate on home grid auto.
 
 Script Used : 
-- Vanilla Javascipt
+- Vanilla Javascript
 - For backened: PHP (OOP)
 
 Thats It....
