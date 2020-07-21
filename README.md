@@ -19,7 +19,8 @@ Features of Media Library :
 
 - Just upload (png/jpeg) your files with single or multiple selection
 - and then click on any item (image from gallery) for filter / crop what you want
-- then set action edit image there and save
+- then you can edit image by crop / filter by click on that button
+- if edit and then sure save (just see bottom of page) 
 - then its done and will udpate on home grid auto.
 
 Script Used : 
