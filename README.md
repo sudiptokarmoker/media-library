@@ -11,7 +11,7 @@ To install this Media Library :
 Features of Media Library : 
 1. Single or Multiple files can be uploaded
 2. Easily edit Image from gallery by Filter or Crop features<br>
-(Crop Features (All crop is not fully functioning yet now 100%. But its working at least)) 
+(Sorry, all crop is not fully functioning yet now 100%. But its working at least) 
 
 =======================================================================
 
