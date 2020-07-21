@@ -22,7 +22,7 @@
         <div class="file-upload-wrapper">
             <div class="file-upload-wrapper-inner">
                 <label for="fileInput">Upload files : </label>
-                <input type="file" id="fileInput" multiple accept="image/*">
+                <input type="file" id="fileInput" multiple accept="image/jpeg, image/png">
                 <button id="btnUpload">Upload Files</button>
             </div>
         </div>
